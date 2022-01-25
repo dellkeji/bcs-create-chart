@@ -17,7 +17,7 @@ var versionCmd = &cobra.Command{
 			"Version  :  " + version.Version,
 			"GoVersion:  " + version.GoVersion,
 		}
-		fmt.Println(strings.Join(info, "\n"))
+		fmt.Fprintf(cmd.OutOrStdout(), strings.Join(info, "\n"))
 	},
 }
 
