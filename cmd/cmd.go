@@ -11,6 +11,9 @@ var rootCmd = &cobra.Command{
 	Use:   "bcs-create",
 	Short: "bcs-create create chart content for bcs scenes",
 	Long:  "bcs-create create chart content for bcs scenes",
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Println("start create chart ...")
+	},
 }
 
 // Execute execute unittest command
