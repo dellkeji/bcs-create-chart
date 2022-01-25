@@ -1,0 +1,8 @@
+name: "bcs-create"
+version: "0.0.1"
+usage: "create bcs default chart"
+description: "create bcs default chart, in order to struct chart"
+ignoreFlags: false
+command: "$HELM_PLUGIN_DIR/bcs-create"
+hooks:
+  install: "cd $HELM_PLUGIN_DIR; scripts/install_plugin.sh"
