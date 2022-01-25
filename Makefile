@@ -7,4 +7,4 @@ else
 endif
 
 build:
-	GOOS=darwin go build -ldflags "-X github.com/dellkeji/bcs-create-chart/pkg/version.Version=${VERSION}"  -o bin/darwin/amd64/bcs-create-chart main.go
+	GOOS=darwin go build -ldflags "-X github.com/dellkeji/bcs-create-chart/pkg/version.Version=${VERSION}"  -o bin/darwin/amd64/bcs-create main.go
